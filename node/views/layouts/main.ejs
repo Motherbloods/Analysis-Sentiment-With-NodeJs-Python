@@ -1,0 +1,23 @@
+<!-- views/layouts/main.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include('../partials/header') %> <%- body %> <%-
+    include('../partials/footer') %>
+  </body>
+</html>
+
+<!-- views/pages/home/index.ejs -->
+<div class="container">
+  <h1>Welcome</h1>
+  <%- include('../components/cards/product-card') %>
+</div>
+
+<!-- views/components/cards/user-card.ejs -->
+<div class="card">
+  <h3><%= user.name %></h3>
+  <p><%= user.email %></p>
+</div>
